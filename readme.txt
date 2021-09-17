@@ -61,7 +61,7 @@ Even if there is no user interaction, scripts will be executed after the specifi
 
 = 1.0.1 - Sep 17 2021 =
 - Fix - "website speed test" mode detection doesn't work if the site using page caching, changing the detection from server to javascript.
-- Fix - if the "website speed test" mode is checked, the timeout value will be set to 4 seconds.
+- New - if the "website speed test" mode is checked and the timeout value is less than 4 seconds, the timeout value will be set to 4 seconds.
 
 = 1.0.0 - Sep 14 2021 =
 - Initial version (based 1.2.2). This is a fork of the "Flying Scripts by WP Speed Matters" plugin, https://wordpress.org/plugins/flying-scripts/. All previous changelogs can be found there.
