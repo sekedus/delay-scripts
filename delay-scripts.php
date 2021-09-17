@@ -5,7 +5,7 @@
  * Description: Download and execute JavaScript on user interaction.
  * Author: Sekedus
  * Author URI: https://sekedus.com/
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text Domain: delay-scripts
  */
 
@@ -15,7 +15,7 @@ if (! defined('WPINC')) {
 }
 
 // Define constant with current version
-define('DELAY_SCRIPTS_VERSION', '1.0.0');
+define('DELAY_SCRIPTS_VERSION', '1.0.1');
 
 include('init-config.php');
 include('settings/index.php');

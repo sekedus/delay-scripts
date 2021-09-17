@@ -90,7 +90,7 @@ function delay_scripts_view_settings() {
                     <option value="10" <?php if ($timeout == 10) {echo 'selected';} ?>>10s</option>
                     <option value="5000" <?php if ($timeout == 5000) {echo 'selected';} ?>>Never</option>
                 </select>
-                <p class="description">Load scripts after a timeout when there is no user interaction</p>
+                <p class="description">Load scripts after a timeout when there is no user interaction.</p>
             <td>
         </tr>
         <tr>
@@ -100,7 +100,7 @@ function delay_scripts_view_settings() {
 							      <input name="delay_scripts_speed_test_mode" type="checkbox" id="speed-test-mode" value="1" <?php if($speed_test_mode) echo 'checked'; ?>>
 							      Delay scripts only if bot "<strong>website speed test</strong>" detected.
 							  </label>
-                <p class="description">- <strong>Load script with</strong> will be set to <strong>Onload</strong>.<br/>- <strong>Disable for logged in users</strong> will be <strong>checked</strong></p>
+                <p class="description">- <strong>Load script with</strong> will be set to <strong>Onload</strong><br/>- <strong>Timeout value</strong> will be set to <strong>4s</strong><br/>- <strong>Disable for logged in users</strong> will be <strong>checked</strong></p>
             </td>
         </tr>
         <tr>
@@ -108,7 +108,7 @@ function delay_scripts_view_settings() {
             <td>
                 <label for="disable-on-login">
 							      <input name="delay_scripts_disable_on_login" id="disable-on-login" type="checkbox" value="1" data-checked="<?php echo $disable_on_login ? 'true' : 'false'; ?>" <?php if($disable_on_login) echo 'checked'; ?>>
-                    Users logged in will be excluded.
+                    Users logged in will be excluded
 							  </label>
             </td>
         </tr>
@@ -116,7 +116,7 @@ function delay_scripts_view_settings() {
             <th scope="row"><label for="disable-pages">Disable on pages</label></th>
             <td>
                 <textarea id="disable-pages" name="delay_scripts_disabled_pages" rows="4" cols="50"><?php echo $disabled_pages; ?></textarea>
-                <p class="description">Keywords of URLs where <strong>Delay Scripts</strong> should be disabled</p>
+                <p class="description">Keywords of URLs where <strong>Delay Scripts</strong> should be disabled.</p>
             </td>
         </tr>
     </tbody>
@@ -134,6 +134,7 @@ function delay_scripts_view_settings() {
           $('#load-timeout').attr('disabled', 'disabled');
           
           $('#scripts-timeout').addClass('disabled');
+          if( Number($('#scripts-timeout').val()) < 4 ) $('#scripts-timeout').val(4);
           
           $('#disable-on-login').parent().addClass('disabled'); //label
           $('#disable-on-login').prop('checked', true);

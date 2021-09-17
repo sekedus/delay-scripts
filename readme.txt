@@ -6,7 +6,7 @@ Tags: delay javascript, defer javascript, 3rd party scripts
 Requires at least: 4.5
 Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ Events from the user like mouse hover, scroll, keyboard input, touch in mobile d
 Even if there is no user interaction, scripts will be executed after the specified timeout.
 
 == Changelog ==
+
+= 1.0.1 - Sep 17 2021 =
+- Fix - "website speed test" mode detection doesn't work if the site using page caching, changing the detection from server to javascript.
+- Fix - if the "website speed test" mode is checked, the timeout value will be set to 4 seconds.
 
 = 1.0.0 - Sep 14 2021 =
 - Initial version (based 1.2.2). This is a fork of the "Flying Scripts by WP Speed Matters" plugin, https://wordpress.org/plugins/flying-scripts/. All previous changelogs can be found there.
