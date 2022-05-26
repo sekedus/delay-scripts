@@ -4,7 +4,7 @@ Contributors: sekedus
 Donate link: https://sociabuzz.com/sekedus/donate
 Tags: delay javascript, defer javascript, 3rd party scripts
 Requires at least: 4.5
-Tested up to: 5.8
+Tested up to: 6.0
 Requires PHP: 5.6
 Stable tag: 1.0.1
 License: GPLv2 or later
@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This is a fork of the "[Flying Scripts by WP Speed Matters](https://wordpress.org/plugins/flying-scripts/)" plugin.
+This is a fork of the "[Flying Scripts](https://wordpress.org/plugins/flying-scripts/)" plugin.
 
 Download and execute JavaScript on user interaction.
 
@@ -65,4 +65,4 @@ Even if there is no user interaction, scripts will be executed after the specifi
 - New - remove event listeners after scripts are loaded.
 
 = 1.0.0 - Sep 14 2021 =
-- Initial version (based 1.2.2). This is a fork of the "Flying Scripts by WP Speed Matters" plugin, https://wordpress.org/plugins/flying-scripts/. All previous changelogs can be found there.
+- Initial version (based 1.2.2). This is a fork of the "Flying Scripts" plugin, https://wordpress.org/plugins/flying-scripts/. All previous changelogs can be found there.
